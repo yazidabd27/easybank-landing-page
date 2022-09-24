@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif !important;
+}
+
+
+nav{
+    z-index: 100;
+}
+
+nav ul{
+    font-size: 14px;
+    height: 57px;
+}
+
+nav li:hover{
+    border-bottom: 4px solid hsl(136, 65%, 51%);
+}
+
+#request-btn{
+    color: #fff;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    font-size: 14px;
+}
+
+#request-btn:hover{
+    opacity: .6;
+}
+
+section.home{
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home .description{
+    padding: 220px 165px 0 96px;
+}
+
+.bg-img{
+    position: relative;
+    top: -210px;
+    left: -140px;
+}
+
+.mockups-img{
+    position: absolute;
+    right: -130px;
+    top: -100px;
+}
+
+.advantages{
+    padding: 120px 96px;
+    background-color: hsl(220, 16%, 96%);
+}
+
+.advantages p{
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.articles{
+    padding: 120px 96px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+.articles-cards div img{
+    height: 171px;
+    width: 100%;
+}
+
+.articles-cards .writer{
+    font-size: 12px;
+}
+
+.articles-cards > div{
+    background-color: #fff;
+}
+
+footer{
+    background-color: hsl(233, 26%, 24%);
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(220, 16%, 96%);
+    font-size: 12px;
+}
+
+footer .copy-rights{
+    color: hsl(233, 8%, 62%);
+}
+
+footer .easy-bank{
+    font-weight: 700;
+    color: hsl(0, 0%, 98%);
+    position: absolute;
+    left: 35px;
+    font-size: 24px;
+    top: -10px;   
+}
+
+footer .nav-bar a:hover,
+.card-description h5:hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+
+footer .icons img:hover{
+    filter: invert(70%) sepia(48%) saturate(724%) hue-rotate(106deg) brightness(206%) contrast(87%);
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+@media (max-width:991px) {
+    nav .nav-bar{
+        display: none;
+        position: absolute;
+        top: 54px;
+        width: 100%;
+        text-align: center;
+        left: 0;  
+    }
+
+    nav ul{
+        height: auto;
+        margin: 30px!important;
+        background-color: #fff;
+        padding: 20px 0;
+    }
+
+    nav #request-btn{
+        display: none;
+    }
+
+   nav a{
+        color: black !important;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto !important;
+    }
+
+    .home .bg-img{
+        display: none;
+    }
+
+    .home .mockups-img{
+        top: -100px;
+        left: 0;
+        width: 100%;
+    }
+
+    .home .description{
+        padding: 0 0 100px 0;
+        text-align: center;
+    }
+
+    .advantages-cards,
+    .articles-cards{
+        flex-direction: column;
+    }
+
+    .advantages{
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .articles{
+        padding: 100px 20px;
+    }
+
+    .advantages .description p{
+        width: 100% !important;
+    }
+
+    footer > div{
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    footer .nav-bar{
+        flex-direction: column;
+        margin:20px 0;
+    }
+
+    footer .forum{
+        align-items: center !important;
+    }
+
+    footer .logo{
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@media (min-width:765px) and (max-width:991px) {
+    .advantages-cards,
+    .articles-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
